@@ -7,9 +7,9 @@
     <input type="date" name="date" placeholder="Enter task date">
     <button type="submit">Add</button>
 </form>
-<ul>
+<ul id="task-list">
     {% for task in tasks %}
-    <li>
+    <li class="fade-in">
         <div class="task-title">{{ task[1] }}</div>
         <div class="task-date">{{ task[4] }}</div>
         <div class="task-buttons">
