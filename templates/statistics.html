@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="chart-container">
+    <h1>Statistics</h1>
+    <img src="{{ url_for('generate_chart') }}" alt="Tasks Chart" class="chart-image">
+</div>
+{% endblock %}

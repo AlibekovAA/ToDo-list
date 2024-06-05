@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>ToDo List</h1>
+<form method="POST" action="{{ url_for('add_task') }}">
+    <input type="text" name="title" placeholder="Enter a new task">
+    <input type="date" name="date" placeholder="Enter task date">
+    <button type="submit">Add</button>
+</form>
+<ul>
+    {% for task in tasks %}
+    <li>
+        <div class="task-title">{{ task[1] }}</div>
+        <div class="task-date">{{ task[4] }}</div>
+        <div class="task-buttons">
+            {% if not task[2] %}
+            <a href="{{ url_for('complete_task', task_id=task[0]) }}">Complete</a>
+            {% endif %}
+            <a href="{{ url_for('delete_task', task_id=task[0]) }}">Delete</a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.about-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.about-details {
+    line-height: 1.6;
+}
+
+.about-details p {
+    margin: 10px 0;
+}
+
+.about-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-details ul li {
+    margin: 5px 0;
+}
+
+.about-details ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-details ul li a:hover {
+    text-decoration: underline;
+}
+
+.task-buttons {
+    float: left;
+    margin-right: 10px;
+}
+
+.task-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.chart-container {
+    text-align: center;
+}
+
+.chart-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
